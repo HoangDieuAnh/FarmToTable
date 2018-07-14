@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>FarmToTable</title>
+    <meta charset="utf-8" />
+</head>
+<body style="font-family:'Segoe UI'">
+    <h1>LuisBot Template</h1>
+    <p>A  bot that shows how to handle natural language using the Cognitive Services LUIS API. </p>
+    <p>Here are some handy links to get started:</p>
+    <div id='botDiv' style='height: 38px; position: fixed; bottom: 0; z-index: 1000; background-color: #fff'>
+    <div id='botTitleBar' style='height: 38px; width: 400px; position:fixed; cursor: pointer;'>
+        </div><iframe width='400px' height='600px' src='https://webchat.botframework.com/embed/FarmToFarm2?s=fqJ6eTli0ms.cwA.95U.mJxY_7XnOrIIg6gbUP7KHQXTQPJLq7O-i-JnUO7GWQk'></iframe></div>
+    <script>
+        (function () {
+            document.querySelector('#botTitleBar').addEventListener('click', function (e) {
+                var botDiv = document.querySelector('#botDiv');
+                botDiv.style.height = botDiv.style.height == '600px' ? '38px' : '600px';
+            });
+        }());
+    </script>
+</body>
+</html>
