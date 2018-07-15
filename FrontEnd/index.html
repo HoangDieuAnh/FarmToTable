@@ -11,29 +11,29 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
   <link rel="stylesheet" href="css/style.css">
-  <title>Bootstrap Theme</title>
+  <title>Farm to Fable</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top p-2">
     <div class="container">
-      <a href="index.html" class="navbar-brand">Farm to Fable</a>
+      <a href="index.html" class="navbar-brand ">Farm to Fable</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a href="index.html" class="nav-link">Home</a>
+            <a href="#top-link" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="about.html" class="nav-link">Meet the Farmer</a>
+            <a href="#page-header" class="nav-link">Market Needs</a>
           </li>
           <li class="nav-item">
-            <a href="services.html" class="nav-link">Services</a>
+            <a href="#solution-heading" class="nav-link">Our Solution</a>
           </li>
           <li class="nav-item">
-            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="reputation.html" class="nav-link">Farmer Reputation</a>
           </li>
           <li class="nav-item">
             <a href="contact.html" class="nav-link">Contact</a>
@@ -44,29 +44,30 @@
   </nav>
 
   <!-- SHOWCASE SLIDER -->
-  <section id="showcase">
+  <section id="showcase" class="mt-5">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
-      <div class="carousel-inner">
+      <div class="carousel-inner" id="top-link">
         <div class="carousel-item carousel-image-1 active">
           <div class="container">
-            <div class="carousel-caption d-none d-sm-block text-left mb-5 ">
+            <div class="carousel-caption d-none d-sm-block mb-5 p-3 mb-2 bg-light text-dark rounded opacity">
               <h1 class="display-3">Farm to Fable</h1>
-              <p class="lead"><b>Building trust and lowering costs in the agricultural<br/>supply chain using emerging technologies.</b></p>
-              <a href="#" class="btn btn-danger btn-lg">Sign Up Now</a>
+              <p><small>fa·ble / ˈfābəl' / a short story sets out to teach a moral or lesson using plants or animals</small></p>
+              <p class="lead"><b>At Farm to Fable, we working on building trust and lowering costs in the agricultural supply chain using emerging technologies. We help you to get the facts you want about your food with an easy to use AI chatbot which uses first hand information from the farmer passed along on an immutable tamperproof blockchain.</b></p>
+              <input id="getstarted" type="button" value="Ask Us About Your Food" class="btn btn-danger btn-lg">
             </div>
           </div>
         </div>
 
         <div class="carousel-item carousel-image-2">
           <div class="container">
-            <div class="carousel-caption d-none d-sm-block mb-5">
-              <h1 class="display-3">Reduce Cost</h1>
-              <p class="lead"><b>Redundancies in the supply chain occur at every port, lab, and marketplace due to a lack of cooperation and trust. By creating a solution which proves to all stakeholders the quality of and authenticity of food products, we can save time and resources to make sure that we can keep feeding real food to real people.</b></p>
+            <div class="carousel-caption d-none d-sm-block mb-5 p-3 mb-2 bg-light text-dark rounded opacity">
+              <h1 class="display-3">Consumer Benefits</h1>
+              <p><b>Redundancies in the supply chain occur at every port, lab, and marketplace due to a lack of cooperation and trust. By creating a solution which proves to all stakeholders the quality and authenticity of food products, we can save time and resources to make sure that we can keep feeding real food to real people at affordable prices. We create a fable for the consumer where they can see the history of their organic produce from farm to table, reconnecting people with the people who grow our food.</b></p>
               <a href="#" class="btn btn-primary btn-lg">Learn More</a>
             </div>
           </div>
@@ -74,9 +75,9 @@
 
         <div class="carousel-item carousel-image-3">
           <div class="container">
-            <div class="carousel-caption d-none d-sm-block mb-5">
-              <h1 class="display-3">Build Trust</h1>
-              <p class="lead"><b>Ordering an organically made apple from California seems like a simple process, but Canada tests the apples for chemical contents to guarantee we are getting organic foods, the marketplace tests the apples to make sure they don't get sued and consumers are skeptical if what they are buying is the real deal.</b></p>
+            <div class="carousel-caption d-none d-sm-block mb-5 p-3 mb-2 bg-light text-dark rounded opacity">
+              <h1 class="display-3">Farmer Benefits</h1>
+              <p class="lead"><b>We are working to disrupt the current supply chain by reducing middlemen fees, certification fees and an opportunity to speak directly with consumers globally. Farmers all over the world will be able to take control over their own labours of love, and be able to pass on their stories.</b></p>
               <a href="#" class="btn btn-success btn-lg">Learn More</a>
             </div>
           </div>
@@ -93,72 +94,247 @@
     </div>
   </section>
 
-  <!--HOME ICON SECTION  -->
-  <section id="home-icons" class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4 text-center">
-          <i class="fas fa-cog fa-3x mb-2"></i>
-          <h3>Reduced Redundancies in the Supply Chain</h3>
-        </div>
-        <div class="col-md-4 mb-4 text-center">
-          <i class="fas fa-cloud fa-3x mb-2"></i>
-          <h3>Centralizing Accountability For Importers</h3>
-        </div>
-        <div class="col-md-4 mb-4 text-center">
-          <i class="fas fa-cart-plus fa-3x mb-2"></i>
-          <h3>Cheaper, Healthier Shopping For Consumers</h3>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- HOME HEADING SECTION -->
+
+  <!-- START HEADING SECTION -->
   <section id="home-heading" class="p-5">
     <div class="dark-overlay">
       <div class="row">
         <div class="col">
           <div class="container pt-5">
             <h1>Are You Ready To Get Started?</h1>
-            <p class="d-none d-md-block">Building a relationship with your farmers, living healthier, and improving global operations is just one click away.</p>
+            <p class="d-none d-md-block">Building a relationship with your farmers, living healthier, and improving global operations is just one click away. If you want to learn more before you check out the chatbot, read on below!</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- INFO SECTION -->
-  <section id="info" class="py-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 align-self-center">
-          <h3>CHATBOT</h3>
-          <p>CHATBHOT HERE</p>
-          <a href="about.html" class="btn btn-outline-danger btn-lg">Chat!</a>
+
+
+
+
+
+  
+    <!-- MARKET NEEDS SECTION -->
+      <!-- PAGE HEADER -->
+      <header id="page-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 m-auto text-center text-dark">
+              <h1 class="display-4 font-weight-bold">Organic Market Needs</h1>
+
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <img src="img/laptop.png" alt="" class="img-fluid">
+      </header>
+  
+    <section id="about" class="py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Government Needs</h1>
+            <p>Governments around the world are looking to support healthy eating, and are looking for solutions to growing the organics sector. Since 2006, the federal government has committed over CAD $20 million for organic farming research, market development, innovation, and risk management. They want to support a flexible, viable, and stable organic sector in Canada.</p>
+            <h1>Consumer Needs</h1>
+            <p>Currently, consumers have limited information about the producers of their foods, and are skeptical of centralized authority labels. By creating a irrefutable "fable", or story of how their food came to be, consumers will be able to prove freshness, location of production and even soil content. 
+            </p>
+            <h1>Retailer Needs</h1>
+            <p>Retailers are looking to reduce the complexity of their supply chains. By adding trust throughout the supply chain, retailers will know where to look in their processes to identify failures and shortcomings.</p>
+
+          </div>
+          <div class="col-md-6">
+            <img src="img/aboutus.jpg" alt="" class="img-fluid rounded-circle d-none d-md-block about-img">
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- VIDEO PLAY -->
+   
+  
+    <!-- ICON BOXES -->
+    <section id="icon-boxes" class="p-5">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <div class="card bg-danger text-white text-center">
+              <div class="card-body">
+                <i class="fas fa-building fa-3x"></i>
+                <h3>Decentralized Accountability</h3>
+                Know where things go wrong in your supply chain and find out where to give credit where credit is due.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-dark text-white text-center">
+              <div class="card-body">
+                <i class="fas fa-bullhorn fa-3x"></i>
+                <h3>Organic Sector Awareness</h3>
+                Quality of life continues to drive technology and innovation; we must focus on how to address obstacles.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-danger text-white text-center">
+              <div class="card-body">
+                <i class="fas fa-comments fa-3x"></i>
+                <h3>Better Communication and Trust</h3>
+                Organics have become an arbitrary status symbol. We bridge consumers to the facts and build a story of your food's journey.
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <div class="card bg-dark text-white text-center">
+              <div class="card-body">
+                <i class="fas fa-box fa-3x"></i>
+                <h3>Guaranteed As Advertised</h3>
+                Organically farmed foods can be altered along the supply chain. The organics sector needs to guarantee their products.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-danger text-white text-center">
+              <div class="card-body">
+                <i class="fas fa-credit-card fa-3x"></i>
+                <h3>Reduced Consumer Prices</h3>
+                Certifications, redundancies and uncertainty lead to higher costs for organic foods, making them inaccessible.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-dark text-white text-center">
+              <div class="card-body">
+                <i class="fas fa-coffee fa-3x"></i>
+                <h3>Frictionless User Experience</h3>
+                Making it easy and convenient to get impactful information is key to making organic foods more widely adopted.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+   <!-- OUR SOLUTION SECTION -->
+      <!-- PAGE HEADER -->
+      <section id="solution-heading" class="p-5">
+          <div class="dark-overlay">
+            <div class="row">
+              <div class="col">
+                <div class="container pt-5">
+                  <h1>How Our Solution Works</h1>
+                  <p class="d-none d-md-block">We start with the farmer, and implement a system of trust so that we can effectively reduce the need for redundant processes.Click through the carousel to find out more. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+
+      
+        <!-- SOLUTION SHOWCASE SLIDER -->
+  <section id="showcase2">
+      <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel2" data-slide-to="1"></li>
+          <li data-target="#myCarousel2" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item carousel-image-4 active">
+            <div class="container">
+              <div class="carousel-caption d-none d-sm-block mb-5 p-3 mb-2 bg-light text-dark rounded opacity">
+                <h1 class="display-3">Farmer Accountability</h1>
+                <p class="lead"><b>Farmers start by creating a transaction on our network, storing data such as geocoordinates of their farm, soil content, and organic status of the food. The farmer puts a batch of produce in a container or bag which is sealed using tags that break if the container or bag is opened; each tag will have the transaction information of the shipment which can be explored to find string values embeded in the transaction. If anything is wrong with the shipment, the retailer will know exactly who was lying.</b></p>
+
+              </div>
+            </div>
+          </div>
+  
+          <div class="carousel-item carousel-image-5">
+            <div class="container">
+              <div class="carousel-caption d-none d-sm-block mb-5 p-3 mb-2 bg-light text-dark rounded opacity">
+                <h1 class="display-3">Transportation</h1>
+                <p class="lead"><b>Redundancies in the supply chain occur at every port, lab, and marketplace due to a lack of cooperation and trust. Many times during the transportation process, farmers, importers and distributors have their goods stopped to be inspected. By putting 100% of the responsibility for honest trade on only the farmer and the retailer, we are able to reduce the cost of certifications, transit times from inspections, and mistrust or double checking when moving goods through the supply chain.</b></p>
+                <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="carousel-item carousel-image-6">
+            <div class="container">
+              <div class="carousel-caption d-none d-sm-block mb-5 p-3 mb-2 bg-light text-dark rounded opacity">
+                <h1 class="display-3">Engaging Consumers</h1>
+                <p class="lead"><b>Our web application will have the functionality to have a real conversation about your food, from where it was grown, the mineral content of the soil, to how long ago it was harvested. Having the ability to see exactly what the farmer is telling you as you eat their produce mirrors the experience of a fine dining waiter or waitress providing excellent table service. The experience and connection with your food invariably will increases, but unlike a fine dining restaurant, we get cheaper as we get better. In retail locations, this also serves as proof that if the goods received are not what they are claimed to be, you can at least diffuse some if not all legal responsibilities back to the source.</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <a href="#myCarousel2" data-slide="prev" class="carousel-control-prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+  
+        <a href="#myCarousel2" data-slide="next" class="carousel-control-next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </section>
+
+      <!--HOME ICON SECTION  -->
+  <section id="home-icons" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4 text-center">
+            <i class="fas fa-cog fa-3x mb-2"></i>
+            <h3>Reducing Redundancies in the Supply Chain</h3>
+          </div>
+          <div class="col-md-4 mb-4 text-center">
+            <i class="fas fa-cloud fa-3x mb-2"></i>
+            <h3>Centralizing Accountability For Importers</h3>
+          </div>
+          <div class="col-md-4 mb-4 text-center">
+            <i class="fas fa-cart-plus fa-3x mb-2"></i>
+            <h3>Enabling Healthier Food For Consumers</h3>
+          </div>
+        </div>
+      </div>
+      <br/>
+        <div class="container">
+          <div class="row">
+              <div class="media">
+                  <div class="media-body lead">
+                    <h4 class="media-heading">Join The Movement, Ask Our Bot</h4>
+                    <p>We've implemented an easy to use chatbot which will be able to accept an image of the QR code on your food product. Once submitted, our bots will look at the batch that your food product was shipped with, and provide information to you on where the food comes from, who farmed it and whether it was organically soured. Know thy food!</p>
+                  </div>
+                  <div class="media-right">
+                    <img class="laptop" src="img/laptop.png" class="media-object" style="width:175px">
+                  </div>
+                </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      
+      <!-- VIDEO PLAY -->
   <section id="video-play">
-    <div class="dark-overlay">
-      <div class="row">
-        <div class="col">
-          <div class="container p-5">
-            <a href="#" class="video" data-video="https://www.youtube.com/embed/FtK65VH5OBg" data-toggle="modal" data-target="#videoModal">
-              <i class="fas fa-play fa-3x"></i>
-            </a>
-            <h1>See What We Do</h1>
+      <div class="dark-overlay">
+        <div class="row">
+          <div class="col">
+            <div class="container p-5">
+              <a href="#" class="video" data-video="https://www.youtube.com/embed/tdhpYQCWnCw" data-toggle="modal" data-target="#videoModal">
+                <i class="fas fa-play fa-3x"></i>
+              </a>
+              <h1>Understanding the Supply Chain Problem</h1>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
+    </section>
+  
   <!-- PHOTO GALLERY -->
   <section id="gallery" class="py-5">
     <div class="container">
@@ -166,11 +342,8 @@
       <p class="text-center">Check out our featured farmers!</p>
       <div class="row mb-4">
 
-
-          <!-- //////////////////////////////////////////////////// -->
-
         <div class="col-md-4">
-            <a data-toggle="modal" data-target="#layofland" data-height="56"
+            <a data-toggle="modal" data-target="#farmer11" data-height="56"
             data-width="562">
               <img class="card-img-top img-fluid cardpic border border-secondary pic" src="img/farmer1.jpg" alt="Card image cap">
   
@@ -180,19 +353,19 @@
   
           </div>
 
-        <div class="modal text-secondary" id="layofland">
+        <div class="modal text-secondary" id="farmer11">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title">Lay of the Land</h5>
+                  <h5 class="modal-title">Manny Abaquin</h5>
                   <button class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                   <ul>
-                    <li>Dates: June - August 2018</li>
-                    <li>Team Size: 3</li>
-                    <li>Toolbox: Android Studio, Google Maps API</li>
-                    <li>Hosted: To be available in the Google Play Store</li>
+                      <li><b>About Manny: </b>Manny believes that the sweat that falls from his labours makes his food taste more wholesome when fully grown.</li>
+                      <li><b>What are you most proud of about your farm:</b> I never maintain it, nature provides the canvas for my organic produce</li>
+                      <li><b>What are your plans for your farm:</b> I'm hoping to use my farm as a school for young farmers and entreprenurs to make more money.</li>
+                      <li><b>Describe yourself:</b> "Success is moving from one failure to the next with no loss of enthusiasm".</li>
                   </ul>
                 </div>
                 <div class="modal-footer">
@@ -202,10 +375,8 @@
             </div>
           </div>
 
-          <!-- //////////////////////////////////////////////////// -->
-
           <div class="col-md-4">
-              <a data-toggle="modal" data-target="#layofland" data-height="562"
+              <a data-toggle="modal" data-target="#farmer22" data-height="562"
               data-width="562">
                 <img class="card-img-top img-fluid cardpic border border-secondary pic" height="56" src="img/farmer2.jpg" alt="Card image cap">
     
@@ -215,19 +386,19 @@
     
             </div>
   
-          <div class="modal text-secondary" id="layofland">
+          <div class="modal text-secondary" id="farmer22">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title">Lay of the Land</h5>
+                    <h5 class="modal-title">Francis Vaugn</h5>
                     <button class="close" data-dismiss="modal">&times;</button>
                   </div>
                   <div class="modal-body">
                     <ul>
-                      <li>Dates: June - August 2018</li>
-                      <li>Team Size: 3</li>
-                      <li>Toolbox: Android Studio, Google Maps API</li>
-                      <li>Hosted: To be available in the Google Play Store</li>
+                        <li><b>About Francis: </b>Francis left a life of wealth in the city to be in tune with mother earth.</li>
+                        <li><b>What are you most proud of about your farm:</b> The people who it supports and feeds.</li>
+                        <li><b>What are your plans for your farm:</b> I plan to keep working it until I am no longer able.</li>
+                        <li><b>Describe yourself:</b> "I believe the path to happiness starts with walking through it".</li>
                     </ul>
                   </div>
                   <div class="modal-footer">
@@ -237,10 +408,8 @@
               </div>
             </div>
   
-            <!-- //////////////////////////////////////////////////// -->
-  
             <div class="col-md-4">
-                <a data-toggle="modal" data-target="#layofland" data-height="562"
+                <a data-toggle="modal" data-target="#farmer33" data-height="562"
                 data-width="562">
                   <img class="card-img-top img-fluid cardpic border border-secondary pic" height="56" src="img/farmer3.jpg" alt="Card image cap">
       
@@ -250,19 +419,19 @@
       
               </div>
     
-            <div class="modal text-secondary" id="layofland">
+            <div class="modal text-secondary" id="farmer33">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title">Stuff harvested from a jacked asian dude</h5>
+                      <h5 class="modal-title">Martin Bovine</h5>
                       <button class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
                       <ul>
-                        <li>His knees are messed up from squating all day</li>
-                        <li>Relies completely on rainwater</li>
-                        <li>Will wear a shirt on Tuesdays and Fridays only</li>
-                        <li>Has 2 kids</li>
+                        <li><b>About Martin: </b>Martin is the first red-grass fed cattle farmer</li>
+                        <li><b>What are you most proud of about your farm:</b> My beef cuts are exlusively sold to Gordon Ramsey's restaurants</li>
+                        <li><b>What are your plans for your farm:</b> I plan to leave this farm to my two kids Lily and Jona, they love it here.</li>
+                        <li><b>Describe yourself:</b> "Usually, doing the hard thing is the same as doing the right thing".</li>
                       </ul>
                     </div>
                     <div class="modal-footer">
@@ -271,8 +440,6 @@
                   </div>
                 </div>
               </div>
-    
-              <!-- //////////////////////////////////////////////////// -->
 
 
       </div>
@@ -285,17 +452,35 @@
       <div class="row">
         <div class="col">
           <h1>Sign Up For Our Newsletter</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio asperiores consectetur, quae ducimus voluptates
-            vero repellendus architecto maiores recusandae mollitia?</p>
+          <p>Sign up for our newsletter to see all of the exciting developments we're making that is supporting a more wholesome planet</p>
           <form class="form-inline justify-content-center">
-            <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Name">
-            <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Email">
-            <button class="btn btn-primary mb-2">Submit</button>
+            <input type="text" id="MAILNAME" name="MAILNAME" class="form-control mb-2 mr-2" placeholder="Enter Name">
+            <input type="text" id="MAILEMAIL" name="MAILEMAIL" class="form-control mb-2 mr-2" placeholder="Enter Email">
+            <a data-toggle="modal" data-target="#registrationStatus">
+              <button id="addme" class="btn btn-primary mb-2">Submit</button>
+            </a>
           </form>
         </div>
       </div>
     </div>
   </section>
+
+  <div class="modal text-secondary" id="registrationStatus">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Mailing Registration Status</h5>
+          <button class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <h3 id="regStat"></h3>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer id="main-footer" class="text-center p-4">
@@ -303,7 +488,7 @@
       <div class="row">
         <div class="col">
           <p>Copyright &copy;
-            <span id="year"></span> farmtotable</p>
+            <span id="year"></span> farmtofable</p>
         </div>
       </div>
     </div>
@@ -323,7 +508,26 @@
       </div>
     </div>
   </div>
+  <div id='botDiv' style='height: 38px; position: fixed; bottom: 0; z-index: 1000; background-color: #fff'>
+      <div id='botTitleBar' style='height: 38px; width: 400px; position:fixed; cursor: pointer;'>
+          </div><iframe width='400px' height='600px' src=' https://webchat.botframework.com/embed/FarmToFarm2?s=fqJ6eTli0ms.cwA.95U.mJxY_7XnOrIIg6gbUP7KHQXTQPJLq7O-i-JnUO7GWQk  '></iframe></div>
+      <script>
+          (function () {
+              document.querySelector('#botTitleBar').addEventListener('click', function (e) {
+                  var botDiv = document.querySelector('#botDiv');
+                  botDiv.style.height = botDiv.style.height == '600px' ? '38px' : '600px';
+              });
+          }());
+      </script>
 
+<script>
+    (function () {
+        document.querySelector('#getstarted').addEventListener('click', function (e) {
+            var botDiv = document.querySelector('#botDiv');
+            botDiv.style.height = botDiv.style.height == '600px' ? '38px' : '600px';
+        });
+    }());
+</script>
 
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -340,7 +544,7 @@
 
     // Configure Slider
     $('.carousel').carousel({
-      interval: 6000,
+      interval: 1000000,
       pause: 'hover'
     });
 
@@ -349,6 +553,35 @@
       event.preventDefault();
       $(this).ekkoLightbox();
     });
+
+    //Confirmation of registration
+    $("#addme").click(function(event) {
+      var User_Name = document.getElementById('MAILNAME').value;
+      var User_Email = document.getElementById('MAILEMAIL').value;
+      var register = {"User_Name":User_Name,"User_Email":User_Email};
+      JSON.stringify(register);
+      console.log(register);
+      
+      $.ajax({
+        url: "newsletter.php",
+        dataType: "json",
+        data: register,
+        type: "POST",
+        success: function(data) {
+          if (data["error"] == "yes") {
+            document.getElementById("regStat").innerHTML = "Error: " + data["return"];
+          }
+          if (data["error"] == "no") {
+            document.getElementById("regStat").innerHTML = data["return"];
+            console.log("No problem");
+          }
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+          console.log(jqXHR.statusText);
+        }
+      });
+    });
+    
 
     // Video Play
     $(function () {
