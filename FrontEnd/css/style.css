@@ -9,12 +9,16 @@ body {
   padding-right: 1rem !important;
 }
 
+.opacity {
+  opacity: .9;
+}
+
 .navbar .nav-item.active {
   border-left: #444 3px solid;
 }
 
 .pic {
-  height: 350px;
+  height: 250px;
   width: 350px;
 }
 .carousel-caption {
@@ -40,10 +44,37 @@ body {
   background-size: cover;
 }
 
+.carousel-image-4 {
+  background: url('../img/path.jpg');
+  background-size: cover;
+}
+
+.carousel-image-5 {
+  background: url('../img/transport.jpg');
+  background-size: cover;
+}
+
+.carousel-image-6 {
+  background: url('../img/map.jpg');
+  background-size: cover;
+}
+
+
+
 #home-heading {
   position: relative;
   min-height: 200px;
-  background: url('../img/lights.jpg');
+  background: url('../img/path.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+#solution-heading {
+  position: relative;
+  min-height: 200px;
+  background: url('../img/path.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   text-align: center;
@@ -62,8 +93,7 @@ body {
 #video-play {
   position: relative;
   min-height: 200px;
-  background: url('../img/media.jpg');
-  background-attachment: fixed;
+  background: url('../img/path.jpg');
   background-repeat: no-repeat;
   background-position: 0 -300px;
   text-align: center;
@@ -74,11 +104,22 @@ body {
   color: #fff;
 }
 
+#laptop {
+  height: 200px;
+  width: 200px;
+}
+
+
+#ship {
+  height: 400px;
+  width: 400px;
+}
+
 #page-header {
   height: 200px;
-  background: url('../img/image1.jpg');
+
   background-position: 0 -360px;
-  background-attachment: fixed;
+
   color: #fff;
   border-bottom: 1px #eee solid;
   padding-top: 50px;
