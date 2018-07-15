@@ -62,10 +62,14 @@ namespace LuisBot.Dialogs
 
                             string[] datas = Spire.Barcode.BarcodeScanner.Scan(bitMap);
 
-                            if(datas == null || datas.Length == 0)
+                            if (datas == null || datas.Length == 0 || datas[0].Length <= 3)
+                            {
                                 await context.PostAsync("Hmmmm, it's weird, I can't scan you barcode. Please make sure that it's the correct format and try again");
+                                context.Done(true);
+                                return;
+                            }
 
-                            var result = await GetItemData(datas[0]);
+                                var result = await GetItemData(datas[0]);
 
                             await context.PostAsync($"Here is some information I found: {result?.Data}");
 

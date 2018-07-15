@@ -77,15 +77,16 @@ namespace Microsoft.Bot.Sample.LuisBot
         {
             await context.PostAsync("Here you go, I'll send you the map");
 
+            // have some problem with retrieving location from blockchain, this is a quickhack
             await GetMapLocation(context, "21 Lantana Ave, Richland, Washington 99352, United States");
 
-            await Task.Delay(6000);
+            await Task.Delay(4000);
 
             PromptDialog.Choice(
              context: context,
              resume: ChoiceReceivedAsync,
              options: Constants.Ratings.Keys,
-             prompt: "Have you used it before? How is the product?",
+             prompt: "Have you eaten it before? Rate your farmer",
              retry: "Sorry I didn't get it, please choose again",
              promptStyle: PromptStyle.Auto
              );
