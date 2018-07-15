@@ -25,10 +25,7 @@ namespace Microsoft.Bot.Sample.LuisBot
             // check if activity is of type message
             if (activity.GetActivityType() == ActivityTypes.Message)
             {
-                if (activity.Attachments?.Count > 0)
-                    await Conversation.SendAsync(activity, () => new BarcodeScanning());
-                else
-                    await Conversation.SendAsync(activity, () => new BasicLuisDialog());
+                await Conversation.SendAsync(activity, () => new RootDialog());
             }
             else
             {
